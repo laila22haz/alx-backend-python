@@ -2,7 +2,7 @@
 """1. Basic annotations - concat"""
 
 
-def concat(str1: str, str2: str):
+def concat(str1: str, str2: str) -> str:
     """
     - str1 (str): string varible
     - str2 (str): string variable
