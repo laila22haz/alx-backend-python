@@ -2,11 +2,11 @@
 """The basics of async"""
 
 import asyncio
-import random
+from random import uniform
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay=10) -> float:
     """function that Write an asynchronous coroutine"""
-    random_number = random.uniform(0, max_delay)
+    random_number = uniform(0, max_delay)
     await asyncio.sleep(random_number)
     return random_number
